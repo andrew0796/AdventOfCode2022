@@ -16,7 +16,7 @@ program dayN
         print *, 'Using test data'
         testing = .true.
         datafile = 'data/testN.txt'
-        stop
+        exit
      end select
   end do
 
@@ -38,7 +38,7 @@ program dayN
         read(io, fmt=*, iostat=status) !PUT DATA HERE
      end do
   end if
-end program day9
+end program dayN
   
 
   

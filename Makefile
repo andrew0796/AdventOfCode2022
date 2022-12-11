@@ -5,7 +5,7 @@
 
 FC := gfortran
 
-SRC := $(wildcard src/*.f90)
+SRC := $(wildcard src/day*.f90)
 BIN := $(patsubst src/%.f90, %.out, $(SRC))
 
 TMP := src/template.f90
